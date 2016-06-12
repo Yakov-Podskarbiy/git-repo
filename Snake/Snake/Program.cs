@@ -10,29 +10,26 @@ namespace Snake
     {
         static void Main(string[] args)
         {
-            int n = 50;
+            Point p1 = new Point();
 
-            for (int i = 10; i <= n; i++)
-            {
-                int x1 = i;
-                int y1 = 0;
-                char s1 = '*';
+            p1.x = 1;
+            p1.y = 2;
+            p1.sym = '%';
+   
 
-                wr(x1, y1, '*');
-
-            }
+           p1.Dr();
 
             Console.ReadLine();
-            
-           }
+        }
 
-       static void wr(int x, int y, char s)
-        {
-            Console.SetCursorPosition(x, y);
-            Console.WriteLine(s);
+       
+
+    }
+
+      
           
           
 
         }
-    }
-}
+    
+
