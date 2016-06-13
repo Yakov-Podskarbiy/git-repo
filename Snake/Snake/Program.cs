@@ -10,14 +10,19 @@ namespace Snake
     {
         static void Main(string[] args)
         {
-            Point p1 = new Point(1, 3, '%');
+            HLines line = new HLines(0, 50, 0, '*');
+           // VLines line = new VLines(6, 0, 10, '*');
+            line.writeHorizLine();
 
-          p1.Dr();
+           VLines line2 = new VLines(50, 0, 20, '*');
+            line2.writeVerticalLine();
 
             Console.ReadLine();
         }
 
        
+
+
 
     }
 
