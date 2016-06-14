@@ -10,12 +10,19 @@ namespace Snake
     {
         static void Main(string[] args)
         {
-            HLines line = new HLines(0, 50, 0, '*');
-           // VLines line = new VLines(6, 0, 10, '*');
-            line.writeHorizLine();
+            Console.SetBufferSize(80, 25);
 
-           VLines line2 = new VLines(50, 0, 20, '*');
-            line2.writeVerticalLine();
+            HLines Topline = new HLines(0, 78, 0, '*');
+            HLines Bottomline = new HLines(0, 78, 24, '*');
+          
+           VLines Leftline = new VLines(0, 0, 24, '*');
+           VLines Rigthline = new VLines(78, 0, 24, '*');
+
+            Topline.writeHorizLine();
+            Bottomline.writeHorizLine();
+            Leftline.writeVerticalLine();
+            Rigthline.writeVerticalLine();
+            
 
             Console.ReadLine();
         }
