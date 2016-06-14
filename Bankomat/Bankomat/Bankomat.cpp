@@ -9,6 +9,8 @@ class Bankomat
 		public:
 		
 			int _50, _100, _500, _1000, _5000;
+			int sum;
+			int zapros;
 
 			void bill_input()
 			{
@@ -28,9 +30,52 @@ class Bankomat
 				cin >> _5000;
 
 			}
+
+			void summa()
+			{
+				
+				sum = _500*500 + _50*50 + _100*100 + _1000*1000 + _5000*5000;
+
+				
+			}
+
+			void bill_output()
+			{
+				
+
+				
+			}
 };
 
 int main()
 {
 	setlocale(LC_ALL, "Russian");
+
+	Bankomat bill;
+
+	cout << "\t\t Программа Банкомат" << endl << endl;
+
+	int c;
+	cout << "\t Ввод купюр:" << endl;
+
+	bill.bill_input();
+
+	cout << "\t Вывод запрашиваемой суммы:" << endl;
+
+	cout << "Введите запрашиваемую сумму:" << endl;
+
+	cin >> c;
+
+	bill.summa();
+
+	if ((c <= bill.sum) && (c%50 == 0))
+	{
+		cout << "Correct!";
+	}
+	else cout << "Non correct";
+
+			_getch();
+
+	return 0;
+
 }
