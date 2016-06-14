@@ -11,9 +11,9 @@ namespace Snake
     {
         Direction direction;
         
-        public Snake(Point tall, int length, Direction _direction)
+        public Snake(Point tall, int length, Direction __direction)
         {
-                direction = _direction;
+                direction = __direction;
                 pList = new List<Point>();
 
             for (int i = 0; i < length; i++)
