@@ -35,10 +35,9 @@ namespace Snake
             {
                 x = x + offset;
             }
-            else if (direction == Direction.LEFT)
-            {
-                x = x - offset;
-            }
+
+            else x = x - offset;
+            
         }
 
         public void Dr ()
@@ -46,6 +45,14 @@ namespace Snake
 
             Console.SetCursorPosition(x, y);
             Console.Write(sym);
+        }
+
+        public  void Clear()
+        {
+            sym = ' ';
+            Dr();
+            
+
         }
 
     }
