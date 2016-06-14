@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Snake
 {
-    class Program
+    class Program 
     {
         static void Main(string[] args)
         {
@@ -18,10 +18,10 @@ namespace Snake
            VLines Leftline = new VLines(0, 0, 24, '*');
            VLines Rigthline = new VLines(78, 0, 24, '*');
 
-            Topline.writeHorizLine();
-            Bottomline.writeHorizLine();
-            Leftline.writeVerticalLine();
-            Rigthline.writeVerticalLine();
+            Topline.writelLine();
+            Bottomline.writelLine();
+            Leftline.writelLine();
+            Rigthline.writelLine();
             
 
             Console.ReadLine();
