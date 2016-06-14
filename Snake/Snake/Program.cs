@@ -23,6 +23,13 @@ namespace Snake
             Leftline.writelLine();
             Rigthline.writelLine();
             
+            // отрисовка точки
+
+            Point p = new Point(10, 15, '+');
+
+            Snake snake = new Snake(p, 5, Direction.RIGHT );
+            
+            snake.writelLine();
 
             Console.ReadLine();
         }
